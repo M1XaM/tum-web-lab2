@@ -9,69 +9,155 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="font-serif text-[#2a241c] bg-gradient-to-b from-[#f6efe3] to-[#f1e3cf] leading-[1.45]">
-
-    <a class="absolute -left-[9999px] top-3 bg-white text-black px-[10px] py-2 rounded-[10px] z-[999] focus:left-3"
-       href="#main">Skip to content</a>
+  <body
+    class="font-serif text-[#2a241c] bg-gradient-to-b from-[#f6efe3] to-[#f1e3cf] leading-[1.45]"
+  >
+    <a
+      class="absolute -left-[9999px] top-3 bg-white text-black px-[10px] py-2 rounded-[10px] z-[999] focus:left-3"
+      href="#main"
+      >Skip to content</a
+    >
 
     <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-[rgba(246,239,227,0.95)] border-b-2 border-[rgba(42,36,28,0.35)]" id="top">
+    <header
+      class="sticky top-0 z-50 bg-[rgba(246,239,227,0.95)] border-b-2 border-[rgba(42,36,28,0.35)]"
+      id="top"
+    >
       <!-- checkbox drives the mobile drawer via peer-checked -->
       <input id="nav-open" type="checkbox" class="peer hidden" />
 
       <!-- top bar -->
-      <div class="max-w-[1120px] mx-auto px-4 sm:px-8 flex items-center justify-between gap-4 py-3">
-
-        <a class="inline-flex items-center gap-[10px] no-underline text-[#2a241c]" href="#top" aria-label="Home">
+      <div
+        class="max-w-[1120px] mx-auto px-4 sm:px-8 flex items-center justify-between gap-4 py-3"
+      >
+        <a
+          class="inline-flex items-center gap-[10px] no-underline text-[#2a241c]"
+          href="#top"
+          aria-label="Home"
+        >
           <span class="font-sans font-[650] text-base">WeeklyPost</span>
         </a>
 
         <!-- desktop nav (hidden on mobile) -->
-        <nav class="hidden md:flex gap-[14px] items-center flex-wrap" aria-label="Primary">
-          <a class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]" href="#platform">Platform</a>
-          <a class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]" href="#resources">Resources</a>
-          <a class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]" href="#pricing">Pricing</a>
-          <a class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]" href="#about">About us</a>
+        <nav
+          class="hidden md:flex gap-[14px] items-center flex-wrap"
+          aria-label="Primary"
+        >
+          <a
+            class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]"
+            href="#platform"
+            >Platform</a
+          >
+          <a
+            class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]"
+            href="#resources"
+            >Resources</a
+          >
+          <a
+            class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]"
+            href="#pricing"
+            >Pricing</a
+          >
+          <a
+            class="font-sans text-[#6a5b49] no-underline text-sm px-[10px] py-[6px] rounded-xl hover:bg-white/45 hover:text-[#2a241c]"
+            href="#about"
+            >About us</a
+          >
         </nav>
 
         <!-- desktop CTA (hidden on mobile) -->
         <div class="hidden md:flex gap-[10px] items-center">
-          <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#pricing">See pricing</a>
-          <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105" href="#get-started">Get the demo</a>
+          <a
+            class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+            href="#pricing"
+            >See pricing</a
+          >
+          <a
+            class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105"
+            href="#get-started"
+            >Get the demo</a
+          >
         </div>
 
         <!-- hamburger button (visible on mobile only) -->
-        <label for="nav-open"
-               class="md:hidden flex flex-col justify-center gap-[5px] cursor-pointer p-1 rounded-lg hover:bg-white/40"
-               aria-label="Toggle menu">
-          <span class="block w-5 h-[2px] rounded bg-[#2a241c] transition-all peer-checked:rotate-45"></span>
+        <label
+          for="nav-open"
+          class="md:hidden flex flex-col justify-center gap-[5px] cursor-pointer p-1 rounded-lg hover:bg-white/40"
+          aria-label="Toggle menu"
+        >
+          <span
+            class="block w-5 h-[2px] rounded bg-[#2a241c] transition-all peer-checked:rotate-45"
+          ></span>
           <span class="block w-5 h-[2px] rounded bg-[#2a241c]"></span>
           <span class="block w-5 h-[2px] rounded bg-[#2a241c]"></span>
         </label>
       </div>
 
       <!-- mobile drawer (shown when checkbox checked) -->
-      <div class="hidden peer-checked:flex flex-col md:hidden border-t border-[rgba(42,36,28,0.16)] px-4 py-4 gap-1 bg-[rgba(246,239,227,0.97)]">
-        <a class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]" href="#platform" onclick="document.getElementById('nav-open').checked=false">Platform</a>
-        <a class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]" href="#resources" onclick="document.getElementById('nav-open').checked=false">Resources</a>
-        <a class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]" href="#pricing" onclick="document.getElementById('nav-open').checked=false">Pricing</a>
-        <a class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]" href="#about" onclick="document.getElementById('nav-open').checked=false">About us</a>
-        <div class="flex flex-col gap-2 mt-2 pt-2 border-t border-[rgba(42,36,28,0.12)]">
-          <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#pricing" onclick="document.getElementById('nav-open').checked=false">See pricing</a>
-          <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4]" href="#get-started" onclick="document.getElementById('nav-open').checked=false">Get the demo</a>
+      <div
+        class="hidden peer-checked:flex flex-col md:hidden border-t border-[rgba(42,36,28,0.16)] px-4 py-4 gap-1 bg-[rgba(246,239,227,0.97)]"
+      >
+        <a
+          class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]"
+          href="#platform"
+          onclick="document.getElementById('nav-open').checked = false"
+          >Platform</a
+        >
+        <a
+          class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]"
+          href="#resources"
+          onclick="document.getElementById('nav-open').checked = false"
+          >Resources</a
+        >
+        <a
+          class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]"
+          href="#pricing"
+          onclick="document.getElementById('nav-open').checked = false"
+          >Pricing</a
+        >
+        <a
+          class="font-sans text-[#6a5b49] no-underline text-base px-3 py-2 rounded-xl hover:bg-white/60 hover:text-[#2a241c]"
+          href="#about"
+          onclick="document.getElementById('nav-open').checked = false"
+          >About us</a
+        >
+        <div
+          class="flex flex-col gap-2 mt-2 pt-2 border-t border-[rgba(42,36,28,0.12)]"
+        >
+          <a
+            class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+            href="#pricing"
+            onclick="document.getElementById('nav-open').checked = false"
+            >See pricing</a
+          >
+          <a
+            class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4]"
+            href="#get-started"
+            onclick="document.getElementById('nav-open').checked = false"
+            >Get the demo</a
+          >
         </div>
       </div>
     </header>
 
     <main id="main">
-
       <!-- HERO -->
-      <section class="pt-12 pb-8 md:pt-24 md:pb-16" id="get-started">
-        <div class="max-w-[1120px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-6 items-center">
-
+      <section
+        class="pt-12 pb-8 md:pt-24 md:pb-16 bg-[rgba(255,255,255,0.22)] border-b border-[rgba(42,36,28,0.10)]"
+        id="get-started"
+      >
+        <div
+          class="max-w-[1120px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-6 items-center"
+        >
           <div>
-            <p class="text-[13px] tracking-[0.18em] uppercase text-[#6a5b49]">Weekly, calm, curated</p>
-            <h1 class="mt-2 text-[32px] sm:text-[42px] md:text-[48px] leading-[1.05]">Turn saved links into a beautiful email newspaper.</h1>
+            <p class="text-[13px] tracking-[0.18em] uppercase text-[#6a5b49]">
+              Weekly, calm, curated
+            </p>
+            <h1
+              class="mt-2 text-[32px] sm:text-[42px] md:text-[48px] leading-[1.05]"
+            >
+              Turn saved links into a beautiful email newspaper.
+            </h1>
             <p class="mt-3 text-[17px] text-[#6a5b49] max-w-[64ch]">
               Save anything you find interesting during the week — articles,
               videos, posts — then receive a clean, customizable digest in your
@@ -79,284 +165,582 @@
             </p>
 
             <div class="mt-[14px] flex gap-3 flex-wrap">
-              <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105" href="#pricing">Start free</a>
-              <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#platform">How it works</a>
+              <a
+                class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105"
+                href="#pricing"
+                >Start free</a
+              >
+              <a
+                class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#platform"
+                >How it works</a
+              >
             </div>
 
-            <ul class="mt-[14px] p-0 flex flex-wrap gap-4 text-[#6a5b49] text-[13px] font-sans">
+            <ul
+              class="mt-[14px] p-0 flex flex-wrap gap-4 text-[#6a5b49] text-[13px] font-sans"
+            >
               <li>&#10004; 2-minute setup</li>
               <li>&#10004; No feeds to manage</li>
               <li>&#10004; Email-first design</li>
             </ul>
           </div>
 
-          <div class="border border-[rgba(42,36,28,0.16)] rounded-[16px] bg-white/[.45] p-4"
-               role="img" aria-label="Email preview mockup">
-            <div class="rounded-xl border border-[rgba(42,36,28,0.18)] bg-white/[.72] overflow-hidden">
-
-              <div class="flex items-center gap-2 px-3 py-[10px] border-b border-[rgba(42,36,28,0.12)] bg-[rgba(246,239,227,0.7)]">
-                <div class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"></div>
-                <div class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"></div>
-                <div class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"></div>
-                <span class="ml-2 text-[13px] text-[#6a5b49] tracking-[0.12em] uppercase font-sans">Your Weekly Brief</span>
+          <div
+            class="border border-[rgba(42,36,28,0.16)] rounded-[16px] bg-white/[.45] p-4"
+            role="img"
+            aria-label="Email preview mockup"
+          >
+            <div
+              class="rounded-xl border border-[rgba(42,36,28,0.18)] bg-white/[.72] overflow-hidden"
+            >
+              <div
+                class="flex items-center gap-2 px-3 py-[10px] border-b border-[rgba(42,36,28,0.12)] bg-[rgba(246,239,227,0.7)]"
+              >
+                <div
+                  class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"
+                ></div>
+                <div
+                  class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"
+                ></div>
+                <div
+                  class="w-[9px] h-[9px] rounded-full border border-[rgba(42,36,28,0.22)] bg-white/[.6]"
+                ></div>
+                <span
+                  class="ml-2 text-[13px] text-[#6a5b49] tracking-[0.12em] uppercase font-sans"
+                  >Your Weekly Brief</span
+                >
               </div>
 
               <div class="p-[14px]">
                 <div>
-                  <h3 class="mt-[10px] text-[18px]">Links you&#39;ll actually finish</h3>
-                  <p class="text-[#6a5b49]">Short summaries, clean layout, no doomscroll.</p>
+                  <h3 class="mt-[10px] text-[18px]">
+                    Links you&#39;ll actually finish
+                  </h3>
+                  <p class="text-[#6a5b49]">
+                    Short summaries, clean layout, no doomscroll.
+                  </p>
                 </div>
 
                 <div class="mt-3 grid gap-[10px]">
-                  <div class="grid grid-cols-[auto_1fr] gap-[10px] items-center">
-                    <span class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]">Article</span>
-                    <span class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"></span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] gap-[10px] items-center"
+                  >
+                    <span
+                      class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]"
+                      >Article</span
+                    >
+                    <span
+                      class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"
+                    ></span>
                   </div>
-                  <div class="grid grid-cols-[auto_1fr] gap-[10px] items-center">
-                    <span class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]">Video</span>
-                    <span class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"></span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] gap-[10px] items-center"
+                  >
+                    <span
+                      class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]"
+                      >Video</span
+                    >
+                    <span
+                      class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"
+                    ></span>
                   </div>
-                  <div class="grid grid-cols-[auto_1fr] gap-[10px] items-center">
-                    <span class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]">Post</span>
-                    <span class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"></span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] gap-[10px] items-center"
+                  >
+                    <span
+                      class="text-xs px-[10px] py-1 rounded-full border border-[rgba(42,36,28,0.14)] bg-[rgba(246,239,227,0.78)] text-[#6a5b49]"
+                      >Post</span
+                    >
+                    <span
+                      class="h-[10px] rounded-full bg-[rgba(42,36,28,0.1)]"
+                    ></span>
                   </div>
                 </div>
 
                 <div class="mt-[14px] flex items-center justify-between gap-3">
-                  <span class="text-[#6a5b49]">Delivered every Sunday &#8226; 3 pages max</span>
+                  <span class="text-[#6a5b49]"
+                    >Delivered every Sunday &#8226; 3 pages max</span
+                  >
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       <!-- PLATFORM -->
       <section class="py-12 md:py-24" id="platform">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-8">
-
           <div class="grid gap-2 mb-[18px]">
             <h2 class="text-[26px] md:text-[32px] leading-[1.1]">Platform</h2>
-            <p class="text-[#6a5b49]">Four actions. One simple loop. Save &#8594; curate &#8594; deliver &#8594; repeat.</p>
+            <p class="text-[#6a5b49]">
+              Four actions. One simple loop. Save &#8594; curate &#8594; deliver
+              &#8594; repeat.
+            </p>
           </div>
 
-          <div class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
-
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
-              <div class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]" aria-hidden="true">&#9312;</div>
+          <div
+            class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]"
+          >
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
+              <div
+                class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]"
+                aria-hidden="true"
+              >
+                &#9312;
+              </div>
               <h3 class="text-[18px]">Save links in one tap</h3>
-              <p class="mt-2 text-[#6a5b49]">Drop anything into your inbox: YouTube, articles, posts, threads. No tagging required &#8212; just save.</p>
+              <p class="mt-2 text-[#6a5b49]">
+                Drop anything into your inbox: YouTube, articles, posts,
+                threads. No tagging required &#8212; just save.
+              </p>
               <div class="mt-3">
-                <a class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]" href="#pricing">Try the quick-save flow &#8594;</a>
+                <a
+                  class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]"
+                  href="#pricing"
+                  >Try the quick-save flow &#8594;</a
+                >
               </div>
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
-              <div class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]" aria-hidden="true">&#9313;</div>
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
+              <div
+                class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]"
+                aria-hidden="true"
+              >
+                &#9313;
+              </div>
               <h3 class="text-[18px]">Keep a static source list</h3>
-              <p class="mt-2 text-[#6a5b49]">Maintain a curated &#8220;sources&#8221; list you can edit anytime. Use it as your weekly compass, not a firehose.</p>
+              <p class="mt-2 text-[#6a5b49]">
+                Maintain a curated &#8220;sources&#8221; list you can edit
+                anytime. Use it as your weekly compass, not a firehose.
+              </p>
               <div class="mt-3">
-                <a class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]" href="#resources">See source templates &#8594;</a>
+                <a
+                  class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]"
+                  href="#resources"
+                  >See source templates &#8594;</a
+                >
               </div>
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
-              <div class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]" aria-hidden="true">&#9314;</div>
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
+              <div
+                class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]"
+                aria-hidden="true"
+              >
+                &#9314;
+              </div>
               <h3 class="text-[18px]">Auto-organize with light filters</h3>
-              <p class="mt-2 text-[#6a5b49]">Basic rules: topic buckets, length limits, and &#8220;must include&#8221; sources. Everything stays readable.</p>
+              <p class="mt-2 text-[#6a5b49]">
+                Basic rules: topic buckets, length limits, and &#8220;must
+                include&#8221; sources. Everything stays readable.
+              </p>
               <div class="mt-3">
-                <a class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]" href="#resources">Explore filters &#8594;</a>
+                <a
+                  class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]"
+                  href="#resources"
+                  >Explore filters &#8594;</a
+                >
               </div>
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
-              <div class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]" aria-hidden="true">&#9315;</div>
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
+              <div
+                class="w-[38px] h-[38px] rounded-xl grid place-items-center border border-[rgba(42,36,28,0.16)] bg-white/[.60] text-[rgba(42,36,28,0.75)] mb-[10px]"
+                aria-hidden="true"
+              >
+                &#9315;
+              </div>
               <h3 class="text-[18px]">Receive a calm email newspaper</h3>
-              <p class="mt-2 text-[#6a5b49]">A few pages, max. Your content &#8212; trimmed, summarized, and delivered on schedule. Designed for finishing.</p>
+              <p class="mt-2 text-[#6a5b49]">
+                A few pages, max. Your content &#8212; trimmed, summarized, and
+                delivered on schedule. Designed for finishing.
+              </p>
               <div class="mt-3">
-                <a class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]" href="#get-started">Get a sample issue &#8594;</a>
+                <a
+                  class="text-[#2a241c] no-underline border-b border-[rgba(42,36,28,0.25)] pb-[2px] hover:border-[rgba(42,36,28,0.55)]"
+                  href="#get-started"
+                  >Get a sample issue &#8594;</a
+                >
               </div>
             </article>
-
           </div>
 
-          <div class="mt-5 rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-white/[.55] p-[14px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div
+            class="mt-5 rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-white/[.55] p-[14px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          >
             <div>
               <h3 class="text-[18px]">Minimal by design.</h3>
-              <p class="text-[#6a5b49]">No endless dashboards &#8212; just the weekly brief that respects your attention.</p>
+              <p class="text-[#6a5b49]">
+                No endless dashboards &#8212; just the weekly brief that
+                respects your attention.
+              </p>
             </div>
-            <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105 shrink-0" href="#pricing">Start free</a>
+            <a
+              class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105 shrink-0"
+              href="#pricing"
+              >Start free</a
+            >
           </div>
-
         </div>
       </section>
 
       <!-- RESOURCES -->
-      <section class="py-12 md:py-24 bg-white/[.12] border-y border-[rgba(42,36,28,0.16)]" id="resources">
+      <section
+        class="py-12 md:py-24 bg-white/[.12] border-y border-[rgba(42,36,28,0.16)]"
+        id="resources"
+      >
         <div class="max-w-[1120px] mx-auto px-4 sm:px-8">
-
           <div class="grid gap-2 mb-[18px]">
             <h2 class="text-[26px] md:text-[32px] leading-[1.1]">Resources</h2>
-            <p class="text-[#6a5b49]">Steal these setups and make it yours in minutes.</p>
+            <p class="text-[#6a5b49]">
+              Steal these setups and make it yours in minutes.
+            </p>
           </div>
 
-          <div class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
+          <div
+            class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
               <h3 class="text-[18px]">Source lists</h3>
-              <p class="mt-2 text-[#6a5b49]">Ready-made source bundles for tech, finance, design, and &#8220;weekly curiosity.&#8221;</p>
-              <a class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#get-started">Download templates</a>
+              <p class="mt-2 text-[#6a5b49]">
+                Ready-made source bundles for tech, finance, design, and
+                &#8220;weekly curiosity.&#8221;
+              </p>
+              <a
+                class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#get-started"
+                >Download templates</a
+              >
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
               <h3 class="text-[18px]">Digest structure</h3>
-              <p class="mt-2 text-[#6a5b49]">A proven 3-section newspaper layout that fits in 2&#8211;3 pages.</p>
-              <a class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#get-started">View layouts</a>
+              <p class="mt-2 text-[#6a5b49]">
+                A proven 3-section newspaper layout that fits in 2&#8211;3
+                pages.
+              </p>
+              <a
+                class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#get-started"
+                >View layouts</a
+              >
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
               <h3 class="text-[18px]">Filtering rules</h3>
-              <p class="mt-2 text-[#6a5b49]">Simple examples: cap videos, prioritize long-reads, and avoid repeats.</p>
-              <a class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#get-started">Copy rules</a>
+              <p class="mt-2 text-[#6a5b49]">
+                Simple examples: cap videos, prioritize long-reads, and avoid
+                repeats.
+              </p>
+              <a
+                class="mt-3 inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#get-started"
+                >Copy rules</a
+              >
             </article>
-
           </div>
 
-          <div class="mt-5 rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div
+            class="mt-5 rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+          >
             <div>
               <h3 class="text-[18px]">Want a weekly routine that sticks?</h3>
-              <p class="text-[rgba(247,240,228,0.78)]">Use the &#8220;Sunday 3-page limit&#8221; rule. It forces quality over quantity.</p>
+              <p class="text-[rgba(247,240,228,0.78)]">
+                Use the &#8220;Sunday 3-page limit&#8221; rule. It forces
+                quality over quantity.
+              </p>
             </div>
-            <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-white/20 bg-white/[.12] text-[#f7f0e4] hover:bg-white/20 shrink-0" href="#pricing">See plans</a>
+            <a
+              class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-white/20 bg-white/[.12] text-[#f7f0e4] hover:bg-white/20 shrink-0"
+              href="#pricing"
+              >See plans</a
+            >
           </div>
-
         </div>
       </section>
 
       <!-- PRICING -->
       <section class="py-12 md:py-24" id="pricing">
         <div class="max-w-[1120px] mx-auto px-4 sm:px-8">
-
           <div class="grid gap-2 mb-[18px]">
             <h2 class="text-[26px] md:text-[32px] leading-[1.1]">Pricing</h2>
-            <p class="text-[#6a5b49]">Start small. Upgrade only when you feel the habit.</p>
+            <p class="text-[#6a5b49]">
+              Start small. Upgrade only when you feel the habit.
+            </p>
           </div>
 
-          <div class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
+          <div
+            class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
               <div>
                 <h3 class="text-[18px]">Starter</h3>
                 <p class="text-[#6a5b49]">For one weekly newsletter.</p>
               </div>
               <p class="my-3 flex items-baseline gap-[6px]">
-                <span class="font-sans font-[800] text-[36px]">$0</span><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
+                <span class="font-sans font-[800] text-[36px]">$0</span
+                ><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
               </p>
               <ul class="p-0 mb-3 grid gap-2 text-[#6a5b49]">
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">1 digest / week</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Basic filters</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Static source list</li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  1 digest / week
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Basic filters
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Static source list
+                </li>
               </ul>
-              <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#get-started">Create a starter issue</a>
+              <a
+                class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#get-started"
+                >Create a starter issue</a
+              >
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.22)] bg-white/[.65] rounded-[16px] p-4" aria-label="Most popular plan">
+            <article
+              class="border border-[rgba(42,36,28,0.22)] bg-white/[.65] rounded-[16px] p-4"
+              aria-label="Most popular plan"
+            >
               <div>
                 <h3 class="text-[18px]">Personal</h3>
                 <p class="text-[#6a5b49]">Build a real reading habit.</p>
               </div>
               <p class="my-3 flex items-baseline gap-[6px]">
-                <span class="font-sans font-[800] text-[36px]">$8</span><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
+                <span class="font-sans font-[800] text-[36px]">$8</span
+                ><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
               </p>
               <ul class="p-0 mb-3 grid gap-2 text-[#6a5b49]">
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Weekly delivery</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Smart grouping</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">3&#8211;5 page limit controls</li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Weekly delivery
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Smart grouping
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  3&#8211;5 page limit controls
+                </li>
               </ul>
-              <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105" href="#get-started">Start Personal</a>
+              <a
+                class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105"
+                href="#get-started"
+                >Start Personal</a
+              >
             </article>
 
-            <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4">
+            <article
+              class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-[16px] p-4"
+            >
               <div>
                 <h3 class="text-[18px]">Team</h3>
                 <p class="text-[#6a5b49]">Shared sources &amp; digests.</p>
               </div>
               <p class="my-3 flex items-baseline gap-[6px]">
-                <span class="font-sans font-[800] text-[36px]">$24</span><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
+                <span class="font-sans font-[800] text-[36px]">$24</span
+                ><span class="font-sans text-[#6a5b49] text-sm">/mo</span>
               </p>
               <ul class="p-0 mb-3 grid gap-2 text-[#6a5b49]">
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Shared source lists</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Multiple digests</li>
-                <li class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]">Team templates</li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Shared source lists
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Multiple digests
+                </li>
+                <li
+                  class="before:content-['\2713'] before:mr-[10px] before:text-[rgba(42,36,28,0.7)]"
+                >
+                  Team templates
+                </li>
               </ul>
-              <a class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#get-started">Talk to us</a>
+              <a
+                class="inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+                href="#get-started"
+                >Talk to us</a
+              >
             </article>
-
           </div>
         </div>
       </section>
 
       <!-- ABOUT -->
-      <section class="py-12 md:py-24 bg-white/[.12] border-y border-[rgba(42,36,28,0.16)]" id="about">
-        <div class="max-w-[1120px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-[18px] items-start">
-
+      <section
+        class="py-12 md:py-24 bg-white/[.12] border-y border-[rgba(42,36,28,0.16)]"
+        id="about"
+      >
+        <div
+          class="max-w-[1120px] mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-[18px] items-start"
+        >
           <div>
             <div class="grid gap-2 mb-[18px]">
               <h2 class="text-[26px] md:text-[32px] leading-[1.1]">About us</h2>
-              <p class="text-[#6a5b49]">We&#39;re building a calmer way to consume information: save what matters, ship it to yourself, actually read it.</p>
+              <p class="text-[#6a5b49]">
+                We&#39;re building a calmer way to consume information: save
+                what matters, ship it to yourself, actually read it.
+              </p>
             </div>
 
-            <div class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
-              <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3">
+            <div
+              class="grid gap-[18px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]"
+            >
+              <article
+                class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3"
+              >
                 <h3 class="text-[18px]">Opinionated simplicity</h3>
-                <p class="text-[#6a5b49]">We keep the UI tiny, so the habit can be big.</p>
+                <p class="text-[#6a5b49]">
+                  We keep the UI tiny, so the habit can be big.
+                </p>
               </article>
-              <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3">
+              <article
+                class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3"
+              >
                 <h3 class="text-[18px]">Inbox-first</h3>
-                <p class="text-[#6a5b49]">Email is the most universal &#8220;read later&#8221; device.</p>
+                <p class="text-[#6a5b49]">
+                  Email is the most universal &#8220;read later&#8221; device.
+                </p>
               </article>
-              <article class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3">
+              <article
+                class="border border-[rgba(42,36,28,0.16)] bg-white/[.45] rounded-xl p-3"
+              >
                 <h3 class="text-[18px]">Designed to finish</h3>
-                <p class="text-[#6a5b49]">Hard limits create focus. Focus creates joy.</p>
+                <p class="text-[#6a5b49]">
+                  Hard limits create focus. Focus creates joy.
+                </p>
               </article>
             </div>
           </div>
 
-          <aside class="rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-white/[.58] p-[14px] md:self-end md:justify-self-end max-w-full md:max-w-[360px] w-full shadow-[0_6px_18px_rgba(42,36,28,0.04)]">
+          <aside
+            class="rounded-[16px] border border-[rgba(42,36,28,0.14)] bg-white/[.58] p-[14px] md:self-end md:justify-self-end max-w-full md:max-w-[360px] w-full shadow-[0_6px_18px_rgba(42,36,28,0.04)]"
+          >
             <figure>
-              <blockquote class="m-0 text-[20px] leading-[1.18] pl-3 border-l-2 border-[rgba(42,36,28,0.22)]">
+              <blockquote
+                class="m-0 text-[20px] leading-[1.18] pl-3 border-l-2 border-[rgba(42,36,28,0.22)]"
+              >
                 &#8220;The best newsletter is the one you actually read.&#8221;
               </blockquote>
-              <figcaption class="mt-2 text-[#6a5b49] font-sans text-[13px] tracking-[0.04em] uppercase">&#8212; a tired tab hoarder</figcaption>
+              <figcaption
+                class="mt-2 text-[#6a5b49] font-sans text-[13px] tracking-[0.04em] uppercase"
+              >
+                &#8212; a tired tab hoarder
+              </figcaption>
             </figure>
-            <a class="w-full mt-[10px] inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105" href="#get-started">Get a demo issue</a>
-            <a class="w-full mt-[10px] inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]" href="#platform">Back to platform</a>
+            <a
+              class="w-full mt-[10px] inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-transparent bg-[rgba(42,36,28,0.92)] text-[#f7f0e4] hover:brightness-105"
+              href="#get-started"
+              >Get a demo issue</a
+            >
+            <a
+              class="w-full mt-[10px] inline-flex items-center justify-center px-[14px] py-[10px] rounded-[14px] no-underline text-sm font-sans whitespace-nowrap border border-[rgba(42,36,28,0.16)] bg-white/[.52] text-[#2a241c]"
+              href="#platform"
+              >Back to platform</a
+            >
           </aside>
-
         </div>
       </section>
-
     </main>
 
     <!-- FOOTER -->
     <footer class="pt-[22px] pb-7 border-t border-[rgba(42,36,28,0.16)]">
-      <div class="max-w-[1120px] mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 flex-wrap">
-        <p class="text-[#6a5b49]">&#169; 2026 WeeklyPost. All rights reserved.</p>
+      <div
+        class="max-w-[1120px] mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 flex-wrap"
+      >
+        <p class="text-[#6a5b49]">
+          &#169; 2026 WeeklyPost. All rights reserved.
+        </p>
         <div class="flex gap-[14px] flex-wrap font-sans text-[13px]">
-          <a class="text-[#6a5b49] no-underline hover:text-[#2a241c]" href="#platform">Platform</a>
-          <a class="text-[#6a5b49] no-underline hover:text-[#2a241c]" href="#resources">Resources</a>
-          <a class="text-[#6a5b49] no-underline hover:text-[#2a241c]" href="#pricing">Pricing</a>
-          <a class="text-[#6a5b49] no-underline hover:text-[#2a241c]" href="#about">About us</a>
+          <a
+            class="text-[#6a5b49] no-underline hover:text-[#2a241c]"
+            href="#platform"
+            >Platform</a
+          >
+          <a
+            class="text-[#6a5b49] no-underline hover:text-[#2a241c]"
+            href="#resources"
+            >Resources</a
+          >
+          <a
+            class="text-[#6a5b49] no-underline hover:text-[#2a241c]"
+            href="#pricing"
+            >Pricing</a
+          >
+          <a
+            class="text-[#6a5b49] no-underline hover:text-[#2a241c]"
+            href="#about"
+            >About us</a
+          >
         </div>
       </div>
     </footer>
 
     <!-- NEWGUY WIDGET -->
-    <div id="newguy-widget" class="fixed bottom-6 right-6 z-[9999] w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] cursor-pointer">
-      <img id="newguy-img" class="absolute inset-0 w-full h-full object-contain"
-           src="assets/newguy.png" alt="" aria-hidden="true" />
-    </div>
+    <div
+      id="newguy-widget"
+      class="group fixed bottom-6 right-6 z-[9999] w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] cursor-pointer"
+    >
+      <!-- Speech bubble (hover only) -->
+      <div
+        class="absolute bottom-full right-0 mb-3 w-[210px] opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200"
+      >
+        <div
+          class="bg-[#2a241c] text-[#f7f0e4] text-sm font-sans rounded-2xl px-4 py-3 shadow-lg leading-snug"
+        >
+          Hey! Have you tried your free weekly digest yet?
+          <a
+            href="#pricing"
+            class="mt-2 flex items-center justify-center w-full px-3 py-[7px] rounded-xl bg-[#f7f0e4] text-[#2a241c] text-xs font-sans font-[600] no-underline hover:bg-white transition-colors"
+          >
+            See pricing →
+          </a>
+          <!-- tail -->
+          <div
+            class="absolute bottom-[-7px] right-8 w-0 h-0 border-l-[7px] border-l-transparent border-r-[7px] border-r-transparent border-t-[8px] border-t-[#2a241c]"
+          ></div>
+        </div>
+      </div>
 
+      <img
+        id="newguy-img"
+        class="absolute inset-0 w-full h-full object-contain"
+        src="assets/newguy.png"
+        alt=""
+        aria-hidden="true"
+      />
+    </div>
   </body>
 </html>

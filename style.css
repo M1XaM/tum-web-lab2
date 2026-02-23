@@ -1,5 +1,17 @@
+@keyframes mascot-appear {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #newguy-widget {
   perspective: 800px;
+  animation: mascot-appear 0.5s ease-out 2s both;
 }
 
 #newguy-widget img {
@@ -8,9 +20,30 @@
   -webkit-backface-visibility: hidden;
 }
 
+@keyframes idle-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes flip-twice {
-  from { transform: rotateY(0deg); }
-  to   { transform: rotateY(720deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
+
+/* idle float starts after the widget has appeared (2s appear + 0.5s duration) */
+#newguy-img {
+  animation: idle-float 3s ease-in-out 2.5s infinite;
 }
 
 #newguy-widget:hover #newguy-img {
