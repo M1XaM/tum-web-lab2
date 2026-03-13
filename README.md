@@ -18,16 +18,16 @@ No feeds to manage. No doomscroll. Just quality content delivered to your inbox.
 ## 📸 Screenshots
 
 ### Hero Section
-![WeeklyPost Hero](img/hero.png)
+![WeeklyPost Hero](public/img/hero.png)
 
 ### Platform Workflow
-![Platform Features](img/platform.png)
+![Platform Features](public/img/platform.png)
 
 ### Pricing Plans
-![Pricing Options](img/prices.png)
+![Pricing Options](public/img/prices.png)
 
-### About Us
-![About Us](img/aboutus.png)
+### Reviews
+![Reviews](public/img/aboutus.png)
 
 ---
 

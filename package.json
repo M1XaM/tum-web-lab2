@@ -1,0 +1,30 @@
+{
+  "name": "tum-web-lab2",
+  "version": "1.0.0",
+  "description": "A serene, minimalist landing page for **WeeklyPost**, a service that transforms your saved links, articles, videos, and posts into a calm, curated email digest delivered every week.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tinacms dev -c \"astro dev\"",
+    "build": "tinacms build --skip-cloud-checks && astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1XaM/tum-web-lab2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M1XaM/tum-web-lab2/issues"
+  },
+  "homepage": "https://github.com/M1XaM/tum-web-lab2#readme",
+  "dependencies": {
+    "astro": "^5.5.5",
+    "tinacms": "^3.6.1"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^2.1.9",
+    "@types/node": "^25.5.0"
+  }
+}
