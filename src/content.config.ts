@@ -5,6 +5,7 @@ const features = defineCollection({
     title: z.string(),
     description: z.string(),
     order: z.number().optional(),
+    hidden: z.boolean().optional().default(false),
   }),
 });
 
@@ -19,6 +20,7 @@ const pricing = defineCollection({
     ctaHref: z.string(),
     highlight: z.boolean().optional().default(false),
     order: z.number(),
+    hidden: z.boolean().optional().default(false),
   }),
 });
 
@@ -27,6 +29,7 @@ const reviews = defineCollection({
     author: z.string(),
     comment: z.string(),
     order: z.number().optional(),
+    hidden: z.boolean().optional().default(false),
   }),
 });
 

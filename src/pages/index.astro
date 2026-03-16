@@ -17,14 +17,17 @@ const compareByOptionalOrder = (
 };
 
 const features = (await getCollection("features"))
+  .filter((entry) => !entry.data.hidden)
   .sort(compareByOptionalOrder)
   .map((entry) => entry.data);
 
 const plans = (await getCollection("pricing"))
+  .filter((entry) => !entry.data.hidden)
   .sort((a, b) => a.data.order - b.data.order)
   .map((entry) => entry.data);
 
 const reviews = (await getCollection("reviews"))
+  .filter((entry) => !entry.data.hidden)
   .sort(compareByOptionalOrder)
   .map((entry) => entry.data);
 ---

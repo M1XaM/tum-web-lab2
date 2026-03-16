@@ -11,7 +11,8 @@ const branch =
 export default defineConfig({
   branch,
 
-  clientId: process.env.TINA_CLIENT_ID || process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
+  clientId:
+    process.env.TINA_CLIENT_ID || process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
   token: process.env.TINA_TOKEN || "",
 
   build: {
@@ -56,6 +57,11 @@ export default defineConfig({
             type: "number",
             name: "order",
             label: "Order",
+          },
+          {
+            type: "boolean",
+            name: "hidden",
+            label: "Hidden",
           },
         ],
       },
@@ -120,6 +126,11 @@ export default defineConfig({
             label: "Order",
             required: true,
           },
+          {
+            type: "boolean",
+            name: "hidden",
+            label: "Hidden",
+          },
         ],
       },
       {
@@ -145,6 +156,11 @@ export default defineConfig({
             type: "number",
             name: "order",
             label: "Order",
+          },
+          {
+            type: "boolean",
+            name: "hidden",
+            label: "Hidden",
           },
         ],
       },
